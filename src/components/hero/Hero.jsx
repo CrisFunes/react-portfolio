@@ -9,7 +9,7 @@ const textVariants ={
   animate:{
     x: 0,
     opacity: 1,
-    trnsition:{
+    transition:{
       duration:1,
       staggerChildren: 0.1,
     }
@@ -21,6 +21,20 @@ const textVariants ={
       duration:2,
       repeat: Infinity,
     },
+  },
+}
+
+const sliderVariants ={
+  initial:{
+    x: 0,
+  },
+  animate:{
+    x: "-220%",
+    transition:{
+      repeat:Infinity,
+      repeatType:"mirror",
+      duration:20,
+    }
   },
 }
 const Hero = () => {
@@ -41,9 +55,13 @@ const Hero = () => {
           <motion.img  variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
         </motion.div>
       </div>
-      <div className="slidingTextContainer">
+      <motion.div 
+      className="slidingTextContainer" 
+      variants={sliderVariants} 
+      initial="initial" 
+      animate="animate">
         Python JavaScript MySQL AWS
-      </div>
+      </motion.div>
       <div className="imageContainer">
         <img src="./hero.png" alt="" />
       </div>
