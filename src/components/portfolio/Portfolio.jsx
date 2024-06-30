@@ -1,3 +1,4 @@
+
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
@@ -50,7 +51,7 @@ const items = [
 ];
 
 const Single = ({item}) => {
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:1010791340.
+    
     const ref = useRef();
 
     const {scrollYProgress} = useScroll({
@@ -74,7 +75,6 @@ const Single = ({item}) => {
                     </motion.div>
                 </div>
             </div>
-            {item.title}
         </section>
     )
 }
