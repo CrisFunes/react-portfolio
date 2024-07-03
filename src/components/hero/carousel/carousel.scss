@@ -8,16 +8,16 @@
     top: 30%;
     right: 0;
     transform: translateY(-50%);
-    width: 60%; // Ajusta el ancho del carrusel para que no exceda el contenedor
-    max-width: 100%; // Asegúrate de que el carrusel no exceda el ancho de la pantalla
-    height: 60%; // Asegúrate de que el carrusel ocupe toda la altura del contenedor
+    width: 60%;
+    max-width: 100%; 
+    height: 60%;
 
     @include mobile {
         width: 90%;
       }
   
     .carousel-images {
-      position: relative; // Cambiado a relative
+      position: relative; 
       width: 100%;
       height: 100%;
       display: flex;
@@ -37,7 +37,7 @@
   
         &.active {
           opacity: 1;
-          z-index: 1; // Asegura que la imagen activa esté al frente
+          z-index: 1; 
         }
       }
     }
@@ -47,7 +47,7 @@
       gap: 10px;
       position: absolute;
       bottom: 20px;
-      z-index: 2; // Asegura que los puntos estén al fondo
+      z-index: 2;
   
       .dot {
         width: 10px;
