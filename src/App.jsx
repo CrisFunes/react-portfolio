@@ -11,10 +11,10 @@ const App = () => {
       <Navbar/>  
       <Hero/>
     </section>
-    <section>
+    <section id="About">
       <Services/>
     </section>
-      <Projects/>
+      <Projects id="Projects"/>
     <section id="Contact">
       <Contact/>
     </section>
