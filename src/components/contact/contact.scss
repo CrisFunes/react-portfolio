@@ -1,8 +1,9 @@
 @import "../../app.scss";
 
 .contact{
+    background: linear-gradient(180deg, #111132, #0c0c1d);
     height: 100%;
-    max-width: 1366px;
+    padding-inline: 100px;
     margin: auto;
     display: flex;
     align-items: center;
