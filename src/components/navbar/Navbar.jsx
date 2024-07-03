@@ -13,9 +13,9 @@ const Navbar = () => {
         transition={{duration:0.5}}
         ></motion.span>
         <div className='social'>
-            <a href="#"><img src="/github.png" alt="" /></a>
-            <a href="#"><img src="/gmail.png" alt="" /></a>
-            <a href="#"><img src="/linkedin.png" alt="" /></a>
+            <a href="https://github.com/CrisFunes"><img src="/github.png" alt="" /></a>
+            <a href="mailto:funesdemian@gmail.com"><img src="/gmail.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/cristian-funes-in/"><img src="/linkedin.png" alt="" /></a>
         </div>
 
       </div>
