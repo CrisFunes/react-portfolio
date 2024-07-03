@@ -8,7 +8,7 @@
 
     .wrapper{
         max-width: 1366px;
-        height: 100%;
+        height: 60%;
         margin: auto;
     
         .textContainer{
@@ -57,7 +57,7 @@
                 margin-right: 20px;
                 font-weight: 300;
                 cursor: pointer;
-                z-index: 99;
+                z-index: 10;
             }
 
             img{
@@ -94,11 +94,11 @@
     .slidingTextContainer{
         position: absolute;
         font-size: 50vh;
-        bottom: -120px;
         white-space: nowrap;
         color: #ffffff09;
         width: 50%;
         font-weight: bold;
         user-select: none;
+        bottom: -150px;
     }
 }
