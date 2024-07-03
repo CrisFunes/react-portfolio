@@ -29,7 +29,7 @@ const Carousel = () => {
               src={image}
               alt={`carousel-${index}`}
               className={`carousel-image ${currentIndex === index ? 'active' : ''}`}
-              initial={{ opacity: 0, x: 0 }}
+              initial={{ opacity: 0, x: 1 }}
               animate={{ opacity: currentIndex === index ? 1 : 0, x: currentIndex === index ? 0 : 100 }}
               transition={{ duration: 0.5 }}
             />
