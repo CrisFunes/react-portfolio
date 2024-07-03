@@ -64,7 +64,7 @@ const Services = () => {
                      storms of neon hues. Aridonia boasts vast deserts of crystal sands. 
                      Lush with forests and waterfalls, Verdantia is a sanctuary of life. 
                      Icelara, perpetually frozen, glimmers with ethereal ice structures. 
-                     The oceans of Aquastria hide secrets of ancient civilizations.
+                     
                 </p>
                 <button>Go</button>
             </motion.div>
@@ -77,7 +77,7 @@ const Services = () => {
                      storms of neon hues. Aridonia boasts vast deserts of crystal sands. 
                      Lush with forests and waterfalls, Verdantia is a sanctuary of life. 
                      Icelara, perpetually frozen, glimmers with ethereal ice structures. 
-                     The oceans of Aquastria hide secrets of ancient civilizations.
+                     
                 </p>
                 <button>Go</button>
             </motion.div>
@@ -90,7 +90,7 @@ const Services = () => {
                      storms of neon hues. Aridonia boasts vast deserts of crystal sands. 
                      Lush with forests and waterfalls, Verdantia is a sanctuary of life. 
                      Icelara, perpetually frozen, glimmers with ethereal ice structures. 
-                     The oceans of Aquastria hide secrets of ancient civilizations.
+                     
                 </p>
                 <button>Go</button>
             </motion.div>
@@ -103,7 +103,7 @@ const Services = () => {
                      storms of neon hues. Aridonia boasts vast deserts of crystal sands. 
                      Lush with forests and waterfalls, Verdantia is a sanctuary of life. 
                      Icelara, perpetually frozen, glimmers with ethereal ice structures. 
-                     The oceans of Aquastria hide secrets of ancient civilizations.
+                     
                 </p>
                 <button>Go</button>
             </motion.div>

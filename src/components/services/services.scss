@@ -5,7 +5,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     .textContainer{
         flex: 1;
@@ -22,7 +21,7 @@
 
         p{
             font-weight: 200;
-            font-size: 20px;
+            font-size: 1.6vw;
             color: gray;
             text-align: right;
         }
@@ -43,14 +42,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        
+        
         @include mobile{
             width: 100%;
         }
 
         .title{
             display: flex;
-            align-items: center;
             gap: 50px;
 
             @include mobile{
@@ -60,8 +59,8 @@
             }
 
             img{
-                width: 300px;
-                height: 100px;
+                width: 18vw;
+                height: 7vw;
                 border-radius: 50px;
                 object-fit: cover;
 
@@ -72,27 +71,30 @@
             }
 
             h1{
-                font-size: 96px;
                 font-weight: 100;
+                font-size: 5vw;
 
                 @include mobile{
                     font-size: 36px;
+                    font-size: 8vw;
                 }
             }
 
             button{
-                width: 300px;
-                height: 100px;
+                width: 15vw;
+                height: 5vw;
                 border-radius: 50px;
                 background-color: orange;
                 border: none;
-                font-size: 24px;
+                font-size: 1.5vw;
+                
                 cursor: pointer;
 
                 @include mobile{
                     font-size: 16px;
                     width: 150px;
                     height: 50px;
+                    font-size: 3vw;
                 }
             }
         }
@@ -101,8 +103,9 @@
     .listContainer{
         flex: 2;
         display: flex;
-        max-width: 1366px;
+        padding-inline: 30px;
         margin: auto;
+        padding-bottom: 60px;
 
         @include mobile{
             flex-direction: column;
@@ -110,7 +113,7 @@
         }
 
         .box{
-            padding: 50px;
+            padding: 3vw;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
@@ -124,12 +127,13 @@
             }
 
             p{
+                font-size: 1vw;
                 @include mobile{
                     display: none;
                 }
             }
             button{
-                padding: 10px;
+                padding: 1vw;
                 background-color: orange;
                 border: none;
                 cursor: pointer;
