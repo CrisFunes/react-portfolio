@@ -51,9 +51,11 @@ const Services = () => {
               </div>
               <div className="title">
                 <h1>
-                  <motion.b whileHover={{ color: 'orange' }}>My</motion.b> History
+                  <motion.b whileHover={{ color: 'orange' }}>My</motion.b> Vision
                 </h1>
+                <a href="#Projects">
                 <button>WHAT I DO?</button>
+                </a>
               </div>
             </motion.div>
             <motion.div
@@ -68,8 +70,7 @@ const Services = () => {
           <motion.div className="listContainer" variants={variant}>
             <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
               <h2>Academic</h2>
-              <p>
-              "I am a software developer with over 2 years of experience
+              <p>"I am a software developer with over 2 years of experience
                at Vistaguay Tech, leading complex and multidisciplinary 
                projects in backend and frontend development with Laravel 
                and React, data processing with Python, and scalable 
@@ -77,8 +78,19 @@ const Services = () => {
                project delivery skills, as well as certifications in AWS and 
                Laravel. I stay up-to-date on the latest trends in software 
                development."
-              </p>
-              <button>Go</button>
+               </p>
+            </motion.div>
+            <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+              <h2>Professional</h2>
+              <p>"I am a software developer with over 2 years of experience
+               at Vistaguay Tech, leading complex and multidisciplinary 
+               projects in backend and frontend development with Laravel 
+               and React, data processing with Python, and scalable 
+               applications in AWS. I have effective communication and 
+               project delivery skills, as well as certifications in AWS and 
+               Laravel. I stay up-to-date on the latest trends in software 
+               development."
+               </p>
             </motion.div>
           </motion.div>
         </motion.div>
