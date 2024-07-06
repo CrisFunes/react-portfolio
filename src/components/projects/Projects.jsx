@@ -6,8 +6,9 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [	
     {
         id: 1,
-        title:"React Commerce",
-        img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
+        title:"Whatsapp Autopay",
+        img:`/chatbot.webp`,
+        link:"https://github.com/CrisFunes/autobotpay",
         desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
     Each planet, unique in its own way, contributes to a 
     cosmic symphony of 
@@ -17,7 +18,8 @@ const items = [
     },
     {
         id: 2,
-        title:"Python Commerce",
+        title:"Python Metadata",
+        link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
         desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
     Each planet, unique in its own way, contributes to a 
@@ -28,6 +30,7 @@ const items = [
     },    {
         id: 3,
         title:"AWS Commerce",
+        link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
         desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
     Each planet, unique in its own way, contributes to a 
@@ -38,6 +41,7 @@ const items = [
     },    {
         id: 4,
         title:"Bash Commerce",
+        link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
         desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
     Each planet, unique in its own way, contributes to a 
@@ -71,7 +75,9 @@ const Single = ({item}) => {
                     <motion.div className="textContainer" style={{y}}>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <button>See More</button>
+                        <a href={item.link}>
+                            <button>See Project</button>
+                        </a>
                     </motion.div>
                 </div>
             </div>
