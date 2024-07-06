@@ -71,7 +71,7 @@ const Hero = () => {
           <motion.button variants={textVariants}>See My Projects</motion.button>
           </a>
           <a href="#Contact">
-          <motion.button variants={textVariants}>Contact Me</motion.button>
+          <motion.button style={{ background: "white", color: "black", fontWeight: "500" }} variants={textVariants}>Contact Me</motion.button>
           </a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
