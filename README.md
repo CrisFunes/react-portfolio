@@ -55,14 +55,19 @@ The site should now be running on `http://localhost:3000`
 ```
 portfolio-website/
 │
+├── public/
 ├── src/
 │   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── utils/
-│   └── App.js
-│
-├── public/
+│   │   ├── contact
+│   │   ├── hero
+│   │   ├── navbar
+│   │   ├── projects
+│   │   ├── services
+│   │   └── sidebar
+│   │   
+│   ├── App.jsx
+│   ├── app.scss
+│   └── main.jsx
 │
 └── README.md
 ```
