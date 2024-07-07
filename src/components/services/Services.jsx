@@ -20,7 +20,6 @@ const variant = {
 
 const Services = () => {
   const ref = useRef();
-
   const isInView = useInView(ref, { margin: '-100px' });
 
   return (
@@ -46,15 +45,15 @@ const Services = () => {
               <div className="title">
                 <img src="/coffee.webp" alt="" />
                 <h1>
-                  <motion.b whileHover={{ color: 'orange' }}>About</motion.b> Me
+                  <motion.b whileHover={{ color: '#FFA500' }}>About</motion.b> Me
                 </h1>
               </div>
               <div className="title">
                 <h1>
-                  <motion.b whileHover={{ color: 'orange' }}>My</motion.b> Vision
+                  <motion.b whileHover={{ color: '#FFA500' }}>My</motion.b> Vision
                 </h1>
                 <a href="#Projects">
-                <button>WHAT I DO?</button>
+                  <button>WHAT I DO?</button>
                 </a>
               </div>
             </motion.div>
@@ -68,7 +67,15 @@ const Services = () => {
             </motion.div>
           </div>
           <motion.div className="listContainer" variants={variant}>
-            <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+            <motion.div 
+              className="box" 
+              initial={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#e0e0e0' }}
+              whileHover={{ 
+                backgroundColor: 'rgba(255, 165, 0, 0.15)', 
+                color: '#ffffff',
+                transition: { duration: 0.3 }
+              }}
+            >
               <h2>Academic</h2>
               <p>"I am a software developer with over 2 years of experience
                at Vistaguay Tech, leading complex and multidisciplinary 
@@ -80,7 +87,15 @@ const Services = () => {
                development."
                </p>
             </motion.div>
-            <motion.div className="box" whileHover={{ background: 'lightgray', color: 'black' }}>
+            <motion.div 
+              className="box" 
+              initial={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#e0e0e0' }}
+              whileHover={{ 
+                backgroundColor: 'rgba(255, 165, 0, 0.15)', 
+                color: '#ffffff',
+                transition: { duration: 0.3 }
+              }}
+            >
               <h2>Professional</h2>
               <p>"I am a software developer with over 2 years of experience
                at Vistaguay Tech, leading complex and multidisciplinary 
