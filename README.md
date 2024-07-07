@@ -58,12 +58,12 @@ portfolio-website/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── contact
-│   │   ├── hero
-│   │   ├── navbar
-│   │   ├── projects
-│   │   ├── services
-│   │   └── sidebar
+│   │   ├── contact/
+│   │   ├── hero/
+│   │   ├── navbar/
+│   │   ├── projects/
+│   │   ├── services/
+│   │   └── sidebar/
 │   │   
 │   ├── App.jsx
 │   ├── app.scss
