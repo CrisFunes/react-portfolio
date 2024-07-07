@@ -55,17 +55,14 @@
         border-radius: 10px;
         background-color: transparent;
         color: white;
-        cursor: pointer;
+        cursor: pointer;                
+        margin-right: 20px;
         font-weight: 300;
         transition: background-color 0.3s, color 0.3s;
 
         &:hover {
           background-color: white;
           color: #0c0c1d;
-        }
-
-        @include mobile {
-          margin-right: 0;
         }
       }
 
