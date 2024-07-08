@@ -14,7 +14,7 @@ This project is based on the Animated Portfolio repository by Safak. I want to e
 
 This portfolio is built with a modern tech stack, demonstrating my proficiency in:
 
-- **Frontend**: React (18.2.0), Sass (1.68.0), EmailJS (4.3.3)
+- **Frontend**: React (18.2.0), Sass (1.68.0), EmailJS (4.3.3), Lucide (0.401.0)
 - **Backend**: Node.js, Vite (4.4.5)
 - **Animations**: Framer Motion (10.16.4)
 - **Version Control**: Git, GitHub
