@@ -3,16 +3,16 @@ import { useRef, useState } from 'react'
 import { motion, useInView } from "framer-motion"
 import emailjs from '@emailjs/browser';
 
-const variants={
-    initial:{
+const variants = {
+    initial: {
+        y: 50,
         opacity: 0,
-        y: 500
     },
-    animate:{
-        opacity: 1,
+    animate: {
         y: 0,
+        opacity: 1,
         transition: {
-            duration: 1,
+            duration: 0.5,
             staggerChildren: 0.1,
         }
     }
@@ -70,9 +70,10 @@ const Contact = () => {
             </motion.div>
             <div className="formContainer">
                 <motion.div className="phoneSvg"
+                    ref={formRef}
                     initial={{opacity: 1}}
                     whileInView={{opacity: 0}}
-                    transition= {{delay: 2, duration: 1}}
+                    transition= {{delay: 1, duration: 1}}
                 >
                 <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
                     <motion.path
@@ -98,17 +99,27 @@ const Contact = () => {
                 </svg>    
                 </motion.div>
                 <motion.form
-                ref={formRef}
-                onSubmit={sendEmail}
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition= {{delay: 2.5, duration: 1}}>
+                    strokeWidth={0.2}
+                    ref={formRef}
+                    onSubmit={sendEmail}
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{delay: 2, duration: 1}}
+                >
                     <input type="text" required placeholder="Name" name="name"/>
                     <input type="email" required placeholder="Email" name="email"/>
                     <textarea rows={8} placeholder="Message" name="message"/>
-                    <button>Submit</button>
-                    {error && "Error"}
-                    {success && "Success"}
+                    <motion.button
+                        whileHover={{
+                            backgroundColor: 'rgba(255, 165, 0, 0.15)',
+                            color: '#ffffff',
+                            transition: { duration: 0.3 }
+                        }}
+                    >
+                        Submit
+                    </motion.button>
+                    {error && <p className="error">Error sending message. Please try again.</p>}
+                    {success && <p className="success">Message sent successfully!</p>}
                 </motion.form>
             </div>
         </motion.div>

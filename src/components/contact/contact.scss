@@ -4,16 +4,16 @@
 
     .contact{
         height: 100%;
-        padding: 100px;
-        margin: auto;
+        max-width: 1162px;
+        padding: 100px 0;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         gap: 50px;
 
         @include mobile{
-            width: 100%;
-            padding: 10px;
             flex-direction: column;
+            padding: 50px 20px;
         }
 
         .textContainer{
@@ -26,12 +26,12 @@
                 gap: 20px;
                 text-align: center;
                 align-items: center;
-                margin-top: 70px;
             }
 
             h1{
-                font-size: 100px;
-                line-height: 88px;
+                font-size: 72px;
+                line-height: 1.1;
+                color: #ffa500;
 
                 @include mobile{
                     font-size: 36px;
@@ -48,7 +48,6 @@
             position: relative;
 
             @include mobile{
-                padding: 50px;
                 width: 100%;
             }
             
@@ -56,7 +55,8 @@
                 stroke: orange;
                 position: absolute;
                 margin: auto;
-                z-index: 1;
+                z-index: 0;
+                pointer-events: none;
             }
 
             form{
@@ -70,24 +70,52 @@
                     border: 1px solid white;
                     color:white;
                     border-radius: 5px;
+                    font-size: 16px;
 
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.5);
+                    }
                     @include mobile{
                         padding: 10px;
                     }
                 }
 
-                button{
+                button {
                     padding: 20px;
                     border: none;
-                    background-color: orange;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: white;
                     cursor: pointer;
                     font-weight: 500;
-
-                    @include mobile{
-                        padding: 10px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s;
+    
+                    &:hover {
+                        background-color: rgba(255, 165, 0, 0.15);
+                    }
+    
+                    @include mobile {
+                        padding: 15px;
                     }
                 }
+            }
+    
+            .error, .success {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+    
+            .error {
+                color: #ff4d4d;
+            }
+    
+            .success {
+                color: #4dff4d;
             }
         }
     }
 }
+
+    
