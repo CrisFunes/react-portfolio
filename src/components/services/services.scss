@@ -61,7 +61,6 @@
       .leftColumn {
         display: flex;
         flex-direction: column;
-        align-items: center;
         flex: 1;
 
         .titleContainer {
@@ -130,7 +129,6 @@
 
         .imageContainer {
           display: flex;
-          justify-content: center;
           
           img {
             width: 70%;
