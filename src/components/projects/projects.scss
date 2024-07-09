@@ -3,7 +3,7 @@
 .projects{
     position: relative;
     background: linear-gradient(180deg, #0c0c1d, #111132);
-    padding: 30px 0;
+    padding: 40px 0;
 
     .progress{
         position: sticky;
@@ -13,13 +13,13 @@
         font-size: 36px;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 20px 20px;
         color: orange;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     
 
         @include mobile{
-            font-size: 24px;
+            font-size: 22px;
         }
 
         .progressBar{
@@ -51,6 +51,7 @@
 
             @include mobile{
                 flex-direction: column;
+                height: 80%;
             }
 
             .imageContainer{
@@ -59,7 +60,9 @@
 
                 @include mobile{
                     width: 100%;
-                    min-height: 300px;
+                    display: flex;
+                    margin-top: 40px;
+
                 }
 
                 img{
@@ -69,7 +72,6 @@
                     border-radius: 20px;
 
                     @include mobile{
-                        object-fit: contain;
                     }
                 }
             }
@@ -82,7 +84,6 @@
 
                 @include mobile{
                     transform: none !important;
-                    padding: 10px;
                     align-items: center;
                     text-align: center;
                 }
