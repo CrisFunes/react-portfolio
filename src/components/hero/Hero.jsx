@@ -57,9 +57,9 @@ const sliderVariants = {
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="wrapper">
+      <div className="hero-content">
         <motion.div
-          className="textContainer"
+          className="text-container"
           variants={textVariants}
           initial="initial"
           animate="animate"
@@ -67,36 +67,33 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Cristian Funes</motion.h2>
           <motion.h1 variants={textVariants}>Full-Stack Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-          <a href="#Projects">
-          <motion.button variants={textVariants}>See My Projects</motion.button>
-          </a>
-          <a href="#Contact">
-          <motion.button style={{ background: "white", color: "black", fontWeight: "500" }} variants={textVariants}>Contact Me</motion.button>
-          </a>
+            <a href="#Projects">
+              <motion.button variants={textVariants}>See My Projects</motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button style={{ background: "white", color: "black", fontWeight: "500" }} variants={textVariants}>Contact Me</motion.button>
+            </a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="./scroll.png" alt="" />
         </motion.div>
-      </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Python JavaScript MySQL AWS
-      </motion.div>
-      <motion.div
-          variants={imageVariants}
+        <motion.div
+            variants={imageVariants}
+            initial="initial"
+            animate="animate" 
+            className="carousel-container">
+          <Carousel />
+        </motion.div>
+        </div>       
+        <motion.div
+          className="sliding-text-container"
+          variants={sliderVariants}
           initial="initial"
-          animate="animate" 
-          className="imageContainer">
-        <Carousel />
-      </motion.div>
+          animate="animate"
+        >
+          Python JavaScript MySQL AWS
+        </motion.div>
     </div>
   );
 };
-
-
-
 
 export default Hero;
