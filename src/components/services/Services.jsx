@@ -77,14 +77,10 @@ const Services = () => {
               }}
             >
               <h2>Academic</h2>
-              <p>"I am a software developer with over 2 years of experience
-               at Vistaguay Tech, leading complex and multidisciplinary 
-               projects in backend and frontend development with Laravel 
-               and React, data processing with Python, and scalable 
-               applications in AWS. I have effective communication and 
-               project delivery skills, as well as certifications in AWS and 
-               Laravel. I stay up-to-date on the latest trends in software 
-               development."
+              <p>Computer Science foundation from Universidad Tecnológica Nacional (Argentina), 
+                with formal education in Java programming. Self-taught in key technologies including Python, 
+                React, and AWS, demonstrating a commitment to continuous learning and adaptability in the 
+                rapidly evolving field of software development.
                </p>
             </motion.div>
             <motion.div 
@@ -97,14 +93,25 @@ const Services = () => {
               }}
             >
               <h2>Professional</h2>
-              <p>"I am a software developer with over 2 years of experience
-               at Vistaguay Tech, leading complex and multidisciplinary 
-               projects in backend and frontend development with Laravel 
-               and React, data processing with Python, and scalable 
-               applications in AWS. I have effective communication and 
-               project delivery skills, as well as certifications in AWS and 
-               Laravel. I stay up-to-date on the latest trends in software 
-               development."
+              <p>As a Full-Stack Developer at Vistaguay for over 2 years (2021-2023), 
+                I've led complex projects in backend and frontend development using Laravel and React. 
+                My experience includes developing georeferenced agricultural reports with Leaflet, 
+                automating GeoPDF report creation for precision agriculture, and managing AWS services like EC2 and EBS. 
+                I've honed my skills in Python, PHP, MySQL, and Linux server administration, consistently delivering high-quality 
+                solutions while staying current with industry trends.
+               </p>
+            </motion.div>
+            <motion.div 
+              className="box" 
+              initial={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: '#e0e0e0' }}
+              whileHover={{ 
+                backgroundColor: 'rgba(255, 165, 0, 0.15)', 
+                color: '#ffffff',
+                transition: { duration: 0.3 }
+              }}
+            >
+              <h2>Technical Skills</h2>
+              <p>Python, PHP, MySQL, React, Laravel, AWS (EC2, EBS), Linux, Git, Leaflet, GeoPDF
                </p>
             </motion.div>
           </motion.div>
