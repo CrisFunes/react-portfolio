@@ -9,46 +9,26 @@ const items = [
         title:"Whatsapp Autopay",
         img:`/chatbot.webp`,
         link:"https://github.com/CrisFunes/autobotpay",
-        desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
-    Each planet, unique in its own way, contributes to a 
-    cosmic symphony of 
-    diversity and wonder. The largest, Zen
-    thara, is a gas giant with swirling 
-    storms of neon hues. Aridonia boasts vast deserts of crystal sands.`
+        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum veniam dolor expedita omnis odio doloremque laboriosam voluptatibus. Quam incidunt repudiandae aperiam necessitatibus sequi deleniti quasi ad iusto accusantium illo!`
     },
     {
         id: 2,
         title:"Python Metadata",
         link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
-    Each planet, unique in its own way, contributes to a 
-    cosmic symphony of 
-    diversity and wonder. The largest, Zen
-    thara, is a gas giant with swirling 
-    storms of neon hues. Aridonia boasts vast deserts of crystal sands.`
+        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel itaque, aliquam, eius voluptate aut recusandae esse dicta soluta, consequuntur ab. Pariatur temporibus harum accusantium incidunt repellat commodi omnis delectus?`
     },    {
         id: 3,
         title:"AWS Commerce",
         link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
-    Each planet, unique in its own way, contributes to a 
-    cosmic symphony of 
-    diversity and wonder. The largest, Zen
-    thara, is a gas giant with swirling 
-    storms of neon hues. Aridonia boasts vast deserts of crystal sands.`
+        desc:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facilis, autem deserunt fugit dicta ex aut ab eaque suscipit necessitatibus cum distinctio temporibus, dignissimos maxime ad eligendi. Blanditiis, cum explicabo?`
     },    {
         id: 4,
         title:"Bash Commerce",
         link:"https://github.com/CrisFunes/autobotpay",
         img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`In a galaxy far beyond the Milky Way, thirty worlds orbit a giant blue star.
-    Each planet, unique in its own way, contributes to a 
-    cosmic symphony of 
-    diversity and wonder. The largest, Zen
-    thara, is a gas giant with swirling 
-    storms of neon hues. Aridonia boasts vast deserts of crystal sands.`
+        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi similique non repudiandae quasi exercitationem molestias tempore soluta. Deserunt, ipsam ullam? Nisi autem harum id, dolore cumque perferendis? Voluptate, minima?`
     },
     
 
