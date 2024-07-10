@@ -13,7 +13,8 @@
 
         @include mobile{
             flex-direction: column;
-            padding: 50px 20px;
+            padding: 8vh 4vh;
+            gap: 0;
         }
 
         .textContainer{
@@ -23,7 +24,7 @@
             gap: 40px;
 
             @include mobile{
-                gap: 20px;
+                gap: 1vh;
                 text-align: center;
                 align-items: center;
             }
@@ -32,10 +33,25 @@
                 font-size: 72px;
                 line-height: 1.1;
                 color: #ffa500;
+                margin-bottom: 2vh;
 
                 @include mobile{
-                    font-size: 36px;
+                    font-size: 4vh;
                 }
+            }
+
+            h2{
+                
+                @include mobile{
+                    font-size: 2.5vh;
+                }
+            }
+
+            a{                
+                @include mobile{
+                    font-size: 2vh;
+                }
+
             }
 
             span{
@@ -50,6 +66,7 @@
 
             @include mobile{
                 width: 100%;
+                padding-top: 3vh;
             }
             
             .phoneSvg {
@@ -57,7 +74,12 @@
                 position: absolute;
                 margin: auto;
                 z-index: 0;
-                pointer-events: none;
+                pointer-events: none; 
+                          
+                @include mobile{
+                    display: flex;
+                    width: 100%;
+                }
             }
 
             form{
