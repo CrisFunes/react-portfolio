@@ -61,7 +61,21 @@
 }
 
 @include mobile {
-  .carousel {
-    height: 40vh;
-  }
+    .carousel {
+      height: 30vh;
+      max-height: 250px;
+    }
+  
+    .carousel-image {
+      border-radius: 8px;
+    }
+  
+    .dots-container {
+      bottom: 5px;
+    }
+  
+    .dot {
+      width: 6px;
+      height: 6px;
+    }
 }
