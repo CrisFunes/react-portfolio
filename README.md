@@ -84,10 +84,6 @@ I'm always interested in new opportunities and collaborations. Feel free to reac
 - **Email**: cristianfunesdev@gmai.com
 - **LinkedIn**: https://www.linkedin.com/in/cristian-funes-in/
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 Thank you for visiting my portfolio repository. I'm constantly working on improving my skills and this portfolio. Any feedback or suggestions are always welcome!
