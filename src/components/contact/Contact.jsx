@@ -1,6 +1,6 @@
 import "./contact.scss"
-import { useRef, useState } from 'react'
-import { motion, useInView } from "framer-motion"
+import { useRef, useState, useEffect } from 'react'
+import { motion, useInView, useAnimation } from "framer-motion"
 import emailjs from '@emailjs/browser';
 
 const variants = {
@@ -19,13 +19,27 @@ const variants = {
 }
 
 const Contact = () => {
+    const ref = useRef()
+    const formRef = useRef()
+    const [error, setError] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const [showForm, setShowForm] = useState(false)
+    const controls = useAnimation()
+  
+    const isInView = useInView(ref, { margin: "-100px" });
 
-  const ref = useRef()
-  const formRef = useRef()
-  const [error, setError] = useState(false)
-  const [success, setSuccess] = useState(false)
-
-  const isInView = useInView(ref, { margin: "-100px" });
+    useEffect(() => {
+    if (isInView) {
+      controls.start("animate")
+      setShowForm(false) 
+      const timer = setTimeout(() => setShowForm(true), 3500)
+      return () => clearTimeout(timer)
+    } else {
+      controls.start("initial") 
+      setShowForm(false) 
+    }
+  }, [isInView, controls])
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -47,12 +61,12 @@ const Contact = () => {
   return (
 
     <div className="contactBg">
-        <motion.div
+      <motion.div
         ref={ref}
         className="contact" 
         variants={variants} 
         initial="initial" 
-        whileInView="animate">
+        animate={controls}>
             <motion.div className="textContainer" variants={variants}>
                 <h1>Let´s work together</h1>
                 <motion.div variants={variants} className="item">
@@ -69,18 +83,17 @@ const Contact = () => {
                 </motion.div>
             </motion.div>
             <div className="formContainer">
-                <motion.div className="phoneSvg"
-                    ref={formRef}
-                    initial={{opacity: 1}}
-                    whileInView={{opacity: 0}}
-                    transition= {{delay: 1, duration: 1}}
-                >
+          <motion.div className="phoneSvg"
+                        initial={{ opacity: 1 }}
+                        animate={isInView ? { opacity: 0 } : { opacity: 1 }}
+                        transition={{ delay: 2.5, duration: 1 }}
+                    >
                 <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
                     <motion.path
                     strokeWidth={0.2}
                     fill="none"
                     initial={{ pathLength: 0 }}
-                    animate={isInView && { pathLength: 1 }}
+                    animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
                     transition={{ duration: 2.5 }}
                     d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
                     M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
@@ -98,14 +111,14 @@ const Contact = () => {
                     />
                 </svg>    
                 </motion.div>
-                <motion.form
-                    strokeWidth={0.2}
-                    ref={formRef}
-                    onSubmit={sendEmail}
-                    initial={{opacity: 0}}
-                    whileInView={{opacity: 1}}
-                    transition={{delay: 2, duration: 1}}
-                >
+          {showForm && (
+            <motion.form
+              ref={formRef}
+              onSubmit={sendEmail}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
                     <input type="text" required placeholder="Name" name="name"/>
                     <input type="email" required placeholder="Email" name="email"/>
                     <textarea rows={8} placeholder="Message" name="message" maxlength="600"/>
@@ -120,9 +133,10 @@ const Contact = () => {
                     </motion.button>
                     {error && <p className="error">Error sending message. Please try again.</p>}
                     {success && <p className="success">Message sent successfully!</p>}
-                </motion.form>
-            </div>
-        </motion.div>
+                    </motion.form>
+          )}
+        </div>
+      </motion.div>
     </div>
   )
 }
