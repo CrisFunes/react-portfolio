@@ -111,7 +111,7 @@ const Services = () => {
               }}
             >
               <h2>Technical Skills</h2>
-              <p>Python, PHP, MySQL, React, Laravel, AWS (EC2, EBS), Linux, Git, Leaflet, GeoPDF
+              <p>Python, PHP, MySQL, React, Laravel, AWS (EC2, EBS), Bash, Git, Leaflet, GeoPDF
                </p>
             </motion.div>
           </motion.div>
