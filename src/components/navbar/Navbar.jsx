@@ -34,9 +34,9 @@ const Navbar = () => {
           variants={textVariants}
           initial="initial"
           animate="animate">
-            <a href="https://github.com/CrisFunes"><img src="/github.png" alt="" /></a>
-            <a href="mailto:funesdemian@gmail.com"><img src="/gmail.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/cristian-funes-in/"><img src="/linkedin.png" alt="" /></a>
+            <a href="https://github.com/CrisFunes"><img src="/assets/github.png" alt="" /></a>
+            <a href="mailto:funesdemian@gmail.com"><img src="/assets/gmail.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/cristian-funes-in/"><img src="/assets/linkedin.png" alt="" /></a>
         </motion.div>
       </div>
     </div>
