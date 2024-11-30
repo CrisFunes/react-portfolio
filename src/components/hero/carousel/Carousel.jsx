@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './carousel.scss';
+import React from 'react';
 
 const images = [
   './people.webp',

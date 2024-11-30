@@ -4,6 +4,7 @@ import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
+import React from 'react';
 
 const App = () => {
   return <div>

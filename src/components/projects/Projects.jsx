@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import "./projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import React from 'react';
 
 const items = [	
     {

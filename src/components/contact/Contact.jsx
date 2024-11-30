@@ -2,6 +2,7 @@ import "./contact.scss"
 import { useRef, useState, useEffect } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import emailjs from '@emailjs/browser';
+import React from 'react';
 
 const variants = {
     initial: {
