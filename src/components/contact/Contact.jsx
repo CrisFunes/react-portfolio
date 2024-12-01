@@ -122,7 +122,7 @@ const Contact = () => {
             >
                     <input type="text" required placeholder="Name" name="name"/>
                     <input type="email" required placeholder="Email" name="email"/>
-                    <textarea rows={8} placeholder="Message" name="message" maxlength="600"/>
+                    <textarea rows={8} placeholder="Message" name="message" maxLength="600"/>
                     <motion.button
                         whileHover={{
                             backgroundColor: 'rgba(255, 165, 0, 0.15)',
