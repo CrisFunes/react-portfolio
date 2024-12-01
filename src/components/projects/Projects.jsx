@@ -8,7 +8,7 @@ const items = [
     {
         id: 1,
         title:"Whatsapp Autopay",
-        img:`${BASE_URL}/assets/chatbot.webp`,
+        img:`https://crisfunes.github.io/react-portfolio/assets/chatbot.webp`,
         link:"https://github.com/CrisFunes/autobotpay",
         desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum veniam dolor expedita omnis odio doloremque laboriosam voluptatibus. Quam incidunt repudiandae aperiam necessitatibus sequi deleniti quasi ad iusto accusantium illo!`
     },

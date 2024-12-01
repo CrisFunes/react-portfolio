@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import './services.scss';
 import { useInView, motion } from 'framer-motion';
 import React from 'react';
-const BASE_URL = "https://crisfunes.github.io/react-portfolio";
 
 const variant = {
   initial: {
@@ -45,7 +44,7 @@ const Services = () => {
           <div className="leftColumn">
             <motion.div className="titleContainer" variants={variant}>
               <div className="title">
-                <img src={`${BASE_URL}assets/coffee.webp`} alt="" />
+                <img src="https://crisfunes.github.io/react-portfolio/assets/coffee.webp" alt="" />
                 <h1>
                   <motion.b whileHover={{ color: '#FFA500' }}>About</motion.b> Me
                 </h1>
@@ -65,7 +64,7 @@ const Services = () => {
               initial="initial"
               animate="animate"
             >
-              <img src={`${BASE_URL}/assets/me.webp`} alt="" />
+              <img src="https://crisfunes.github.io/react-portfolio/assets/me.webp" alt="" />
             </motion.div>
           </div>
           <motion.div className="listContainer" variants={variant}>
