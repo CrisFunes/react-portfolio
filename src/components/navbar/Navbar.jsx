@@ -2,6 +2,7 @@ import Sidebar from '../sidebar/Sidebar'
 import './navbar.scss'
 import {motion} from "framer-motion"
 import React from 'react';
+const BASE_URL = "https://crisfunes.github.io/react-portfolio";
 
 const textVariants = {
   initial: {
@@ -34,9 +35,9 @@ const Navbar = () => {
           variants={textVariants}
           initial="initial"
           animate="animate">
-            <a href="https://github.com/CrisFunes"><img src="/assets/github.png" alt="" /></a>
-            <a href="mailto:funesdemian@gmail.com"><img src="/assets/gmail.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/cristian-funes-in/"><img src="/assets/linkedin.png" alt="" /></a>
+            <a href="https://github.com/CrisFunes"><img src={`${BASE_URL}/assets/github.png`} alt="" /></a>
+            <a href="mailto:funesdemian@gmail.com"><img src={`${BASE_URL}/assets/gmail.png`} alt="" /></a>
+            <a href="https://www.linkedin.com/in/cristian-funes-in/"><img src={`${BASE_URL}/assets/linkedin.png`} alt="" /></a>
         </motion.div>
       </div>
     </div>

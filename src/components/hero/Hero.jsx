@@ -2,6 +2,7 @@ import "./hero.scss";
 import { motion } from "framer-motion";
 import Carousel from './carousel/Carousel.jsx';
 import React from 'react';
+const BASE_URL = "https://crisfunes.github.io/react-portfolio";
 
 const textVariants = {
   initial: {
@@ -75,7 +76,7 @@ const Hero = () => {
               <motion.button style={{ background: "white", color: "black", fontWeight: "500" }} variants={textVariants}>Contact Me</motion.button>
             </a>
           </motion.div>
-          <motion.img variants={textVariants} animate="scrollButton" src="./assets/scroll.png" alt="" />
+          <motion.img variants={textVariants} animate="scrollButton" src={`${BASE_URL}/assets/scroll.png`} alt="" />
         </motion.div>
         <motion.div
             variants={imageVariants}
