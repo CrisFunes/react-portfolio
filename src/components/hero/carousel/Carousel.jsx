@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './carousel.scss';
 import React from 'react';
+const BASE_URL = "https://crisfunes.github.io/react-portfolio";
 
 const images = [
   `${BASE_URL}/assets/people.webp`,
