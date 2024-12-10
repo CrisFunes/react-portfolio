@@ -6,6 +6,12 @@
 
 Hello! I'm Cristian Funes, a passionate Full-Stack Developer with over 2 years of experience in creating robust and scalable web applications. This repository hosts the code for my personal portfolio website, showcasing my skills, projects, and professional journey.
 
+## 🌐 Live Demo
+
+You can visit my portfolio website and explore my work live:
+
+👉 [Cris Funes Portfolio](https://crisfunes.github.io/react-portfolio)
+
 ## 🙏 Acknowledgements
 
 This project is based on the Animated Portfolio repository by Safak. I want to express my gratitude for the inspiration and foundational work provided by this excellent project. While I've customized and expanded upon the original concept, the initial structure and animations were instrumental in creating this portfolio. (https://github.com/safak/animated-portfolio)
