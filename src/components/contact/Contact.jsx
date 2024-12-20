@@ -83,7 +83,7 @@ const Contact = () => {
             <a href="https://github.com/CrisFunes">CrisFunes</a>
           </motion.div>
         </motion.div>
-        <div className="formContainer">
+        <div className="formContainer" style={{ height: '496px' }}> {/* <-- Added fixed height */}
           <motion.div className="phoneSvg"
             initial={{ opacity: 1 }}
             animate={isInView ? { opacity: 0 } : { opacity: 1 }}
@@ -115,10 +115,11 @@ const Contact = () => {
           {showForm && (
             <motion.form
               ref={formRef}
-              onSubmit={sendEmail}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              onSubmit={sendEmail}              
+              initial={{ opacity: 0, height: 0, overflow: 'hidden' }} 
+              animate={{ opacity: 1, height: 'auto', overflow: 'visible' }}
+              transition={{ duration: 1 }} 
+              style={{ overflow: 'hidden' }}
             >
               <input type="text" required placeholder="Name" name="name" />
               <input type="email" required placeholder="Email" name="email" />
