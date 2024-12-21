@@ -18,6 +18,10 @@ const variants = {
     }
   }
 }
+const svgVariants = { // Define variants for the SVG
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 }
+};
 
 const Contact = () => {
   const ref = useRef()
@@ -28,18 +32,27 @@ const Contact = () => {
   const controls = useAnimation()
 
   const isInView = useInView(ref, { margin: "-100px" });
+  const [svgVisibility, setSvgVisibility] = useState("visible"); 
 
   useEffect(() => {
     if (isInView) {
-      controls.start("animate")
-      setShowForm(false)
-      const timer = setTimeout(() => setShowForm(true), 3500)
-      return () => clearTimeout(timer)
+      setSvgVisibility("visible");
+      const sequence = async () => {
+        await controls.start("animate");
+        setTimeout(async () => {
+          setSvgVisibility("hidden"); // Hide SVG half a second before the form appears
+          await new Promise(resolve => setTimeout(resolve, 500)); // Half a second delay
+          setShowForm(true); // Show the form
+        }, 500); // Start hiding SVG after 3 seconds
+      };
+      sequence();
     } else {
-      controls.start("initial")
-      setShowForm(false)
+      controls.start("initial");
+      setSvgVisibility("hidden"); // Hide SVG when out of view
+      setShowForm(false);
     }
-  }, [isInView, controls])
+  }, [isInView, controls]);
+
 
 
   const sendEmail = (e) => {
@@ -83,19 +96,21 @@ const Contact = () => {
             <a href="https://github.com/CrisFunes">CrisFunes</a>
           </motion.div>
         </motion.div>
-        <div className="formContainer" style={{ height: '496px' }}> {/* <-- Added fixed height */}
-          <motion.div className="phoneSvg"
-            initial={{ opacity: 1 }}
-            animate={isInView ? { opacity: 0 } : { opacity: 1 }}
-            transition={{ delay: 2.5, duration: 1 }}
-          >
-            <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+        <div className="formContainer" style={{ height: '496px' }}>
+        <motion.div
+          className="phoneSvg"
+          variants={svgVariants} // Apply the variants
+          initial="visible"  //Initial state
+          animate={svgVisibility}  //Animate based on state
+          transition={{ duration: 0.5 }} // SVG disappears after half a second
+        >
+            <svg width="450px" height="450px" viewBox="0 0 32.666 32.666"> 
               <motion.path
                 strokeWidth={0.2}
                 fill="none"
                 initial={{ pathLength: 0 }}
-                animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
-                transition={{ duration: 2.5 }}
+                animate={{ pathLength: 1 }} 
+                transition={{ duration: 1 }} // SVG generation lasts 1 second
                 d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
                     M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
                     C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
@@ -119,7 +134,7 @@ const Contact = () => {
               initial={{ opacity: 0, height: 0, overflow: 'hidden' }} 
               animate={{ opacity: 1, height: 'auto', overflow: 'visible' }}
               transition={{ duration: 1 }} 
-              style={{ overflow: 'hidden' }}
+              style={{ overflow: 'hidden' }} //Form appears with a 1-second transition
             >
               <input type="text" required placeholder="Name" name="name" />
               <input type="email" required placeholder="Email" name="email" />
