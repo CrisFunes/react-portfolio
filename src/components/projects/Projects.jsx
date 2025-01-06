@@ -7,31 +7,11 @@ import React from 'react';
 const items = [	
     {
         id: 1,
-        title:"Whatsapp Autopay",
-        img:`https://crisfunes.github.io/react-portfolio/assets/chatbot.webp`,
-        link:"https://github.com/CrisFunes/autobotpay",
-        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laborum veniam dolor expedita omnis odio doloremque laboriosam voluptatibus. Quam incidunt repudiandae aperiam necessitatibus sequi deleniti quasi ad iusto accusantium illo!`
-    },
-    {
-        id: 2,
-        title:"Python Metadata",
-        link:"https://github.com/CrisFunes/autobotpay",
-        img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vel itaque, aliquam, eius voluptate aut recusandae esse dicta soluta, consequuntur ab. Pariatur temporibus harum accusantium incidunt repellat commodi omnis delectus?`
-    },    {
-        id: 3,
-        title:"AWS Commerce",
-        link:"https://github.com/CrisFunes/autobotpay",
-        img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facilis, autem deserunt fugit dicta ex aut ab eaque suscipit necessitatibus cum distinctio temporibus, dignissimos maxime ad eligendi. Blanditiis, cum explicabo?`
-    },    {
-        id: 4,
-        title:"Bash Commerce",
-        link:"https://github.com/CrisFunes/autobotpay",
-        img:`https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
-        desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi similique non repudiandae quasi exercitationem molestias tempore soluta. Deserunt, ipsam ullam? Nisi autem harum id, dolore cumque perferendis? Voluptate, minima?`
-    },
-    
+        title:"ProTrack Dashboard",
+        img:`https://crisfunes.github.io/react-portfolio/assets/dashboard-preview.png`,
+        link:"https://github.com/CrisFunes/protrack",
+        desc:`ProTrack is a comprehensive project management dashboard that integrates with popular development tools like Jira, Trello, GitHub, and Bitbucket. It provides a centralized view of your project's progress, tasks, and development activities in real-time.`
+    },  
 
 ];
 
