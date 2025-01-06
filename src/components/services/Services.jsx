@@ -94,12 +94,14 @@ const Services = () => {
               }}
             >
               <h2>Professional</h2>
-              <p>As a Full-Stack Developer at Vistaguay for over 2 years (2021-2023), 
-                I've led complex projects in backend and frontend development using Laravel and React. 
-                My experience includes developing georeferenced agricultural reports with Leaflet, 
-                automating GeoPDF report creation for precision agriculture, and managing AWS services like EC2 and EBS. 
-                I've honed my skills in Python, PHP, MySQL, and Linux server administration, consistently delivering high-quality 
-                solutions while staying current with industry trends.
+              <p>Software Developer with over 3 years of experience in full-stack development,
+                specializing in backend and frontend solutions. Currently working as a
+                freelancer, delivering high-quality web applications using Node.js
+                and React.js. At Vistaguay Tech, led complex, multidisciplinary projects,
+                including georeferenced agricultural platforms and scalable solutions
+                leveraging AWS services. Proficient in creating robust and efficient
+                systems, with a strong foundation in Laravel, React, and Python. 
+                Known for adaptability, effective teamwork, and delivering impactful results.
                </p>
             </motion.div>
             <motion.div 
