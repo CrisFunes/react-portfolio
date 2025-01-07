@@ -11,7 +11,15 @@ const items = [
         img:`https://crisfunes.github.io/react-portfolio/assets/dashboard-preview.png`,
         link:"https://github.com/CrisFunes/protrack",
         desc:`ProTrack is a comprehensive project management dashboard that integrates with popular development tools like Jira, Trello, GitHub, and Bitbucket. It provides a centralized view of your project's progress, tasks, and development activities in real-time.`
-    },  
+    },
+    {
+        id: 2,
+        title:"Portfolio Web",
+        img:`https://crisfunes.github.io/react-portfolio/assets/portfolio.png`,
+        link:"https://github.com/CrisFunes/react-portfolio",
+        desc:`Responsive web application built with React.js, designed to deliver an engaging and interactive user experience. The project leverages modern CSS techniques for a clean and adaptable design, ensuring compatibility across devices. Its component-based architecture promotes reusability and scalability, while animations and intuitive navigation enhance usability.`
+    }, 
+    
 
 ];
 
